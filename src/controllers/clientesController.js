@@ -36,4 +36,16 @@ const getCompradores = (req, res) => {
   });
 };
 
-module.exports = { postCliente, getAll, getCompradores };
+const getClientesPorCpf = (req, res) => {
+  const cpf = req.params.cpf
+  
+  clientes.find({ cpf }, function (err, clientes) {
+    if (err) {
+      res.status(500).send({ message: err.message });
+    }
+  
+    res.status(200).send(clientes);
+  });
+};
+
+module.exports = { postCliente, getAll, getCompradores, getClientesPorCpf };
