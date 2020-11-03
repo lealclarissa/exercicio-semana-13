@@ -1,3 +1,4 @@
+const nodemon = require("nodemon");
 const clientes = require("../models/clientes");
 
 const postCliente = (req, res) => {
@@ -25,4 +26,14 @@ const getAll = (req, res) => {
   });
 };
 
-module.exports = { postCliente, getAll };
+const getCompradores = (req, res) => {
+  clientes.find({ comprou: true }, function (err, clientes) {
+    if (err) {
+      res.status(500).send({ message: err.message });
+    }
+  
+    res.status(200).send(clientes);
+  });
+};
+
+module.exports = { postCliente, getAll, getCompradores };

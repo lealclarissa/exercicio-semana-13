@@ -4,5 +4,6 @@ const controller = require("../controllers/clientesController");
 
 router.post("/", controller.postCliente);
 router.get("/", controller.getAll);
+router.get("/compradores", controller.getCompradores);
 
 module.exports = router;
