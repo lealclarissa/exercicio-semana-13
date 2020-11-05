@@ -27,7 +27,7 @@ const getAll = (req, res) => {
 };
 
 const getCompradores = (req, res) => {
-  clientes.find({ comprou: true }, function (err, clientes) {
+  clientes.find({comprou: true}, { nome: 1, email: 1, _id: 0 }, function (err, clientes) {
     if (err) {
       res.status(500).send({ message: err.message });
     }
