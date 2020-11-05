@@ -5,11 +5,11 @@
 
 ### Objetivo: 
 
-Fazer as requisições e aplicar filtros integrando a estrutura (que já fazíamos usando um arquivo json como model no VSCode) a um banco de dados no Mongodb. Utilizando sua documentação para prática de para implementação no código. 
+Fazer as requisições e aplicar filtros integrando a estrutura (que já fazíamos usando um arquivo json como model no VSCode) a um banco de dados no Mongodb; utilizando sua documentação para implementação no código. 
 
 Para esta atividade, estou utilizando:
 
-* **VSCode**: Onde estruturo meu código - em javascript, node.js;
+* **Visual Studio Code**: Onde estruturo meu código - em javascript, node.js;
 * **Terminal (linux)**: através dele executo comandos relacionados ao git e github, também é onde rodo meu servidor, junto c node.js/nodemon;
 * **Postman**: Utilizado para testar as requisições e deixá-las salvas em coleções, para futuras modificações/novos testes;
 * **Mongodb**: gerenciador de banco de dados utilizado;
